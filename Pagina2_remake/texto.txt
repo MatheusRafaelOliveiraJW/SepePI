@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech&History — Evolução da Tecnologia</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <a href="../Pagina_1/sobre.html">
+          <img src="imagens/20260829_085739_0000.png" alt="Logo: Tech&History" />
+        </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="../Pagina_1/sobre.html" aria-current="page">Povos</a></li>
+          <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
+          <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
+          <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
+          <li><a href="../Pagina_5/costumes.html">Costumes</a></li>
+          <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
+          <li><p id="botao"><a href="../PaginaQuiz/quiz.html">Jogue Quiz!</a></p></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="evolution-page">
+      <section class="evo-hero">
+        <div class="evo-hero-copy">
+          <span class="eyebrow">TECNOLOGIA • HISTÓRIA • TRANSFORMAÇÃO</span>
+          <h2>A tecnologia nunca parou de <span>evoluir</span></h2>
+          <p>
+            Da pedra lascada à inteligência artificial, cada geração aproveitou o conhecimento
+            anterior para criar novas ferramentas, resolver problemas e transformar a sociedade.
+          </p>
+          <div class="evo-hero-actions">
+            <a class="evo-button" href="#linha-do-tempo">Explorar a linha do tempo</a>
+            <a class="evo-link" href="#eras">Ver as grandes eras ↓</a>
+          </div>
+        </div>
+
+        <div class="evo-hero-art" aria-label="Representação visual da evolução tecnológica">
+          <div class="evo-art-grid"></div>
+          <div class="evo-orbit orbit-a"></div>
+          <div class="evo-orbit orbit-b"></div>
+          <div class="evo-art-core">IDEIA<br><span>→</span><br>INOVAÇÃO</div>
+          <div class="evo-art-label label-1">PEDRA</div>
+          <div class="evo-art-label label-2">RODA</div>
+          <div class="evo-art-label label-3">MÁQUINA</div>
+          <div class="evo-art-label label-4">COMPUTADOR</div>
+          <div class="evo-art-label label-5">IA</div>
+        </div>
+      </section>
+
+      <section class="evo-intro">
+        <div class="evo-section-heading">
+          <span>01 / GRANDES ERAS</span>
+          <h2>Uma longa jornada em diferentes ritmos</h2>
+        </div>
+        <div class="era-list">
+          <article class="era-row">
+            <div class="era-number">01</div>
+            <div class="era-date">Pré-história</div>
+            <div class="era-content">
+              <h3>As primeiras ferramentas</h3>
+              <p>Pedras, fogo, lanças e técnicas de sobrevivência ampliaram as capacidades humanas e marcaram os primeiros passos da tecnologia.</p>
+            </div>
+            <div class="era-symbol">✦</div>
+          </article>
+          <article class="era-row">
+            <div class="era-number">02</div>
+            <div class="era-date">Antiguidade</div>
+            <div class="era-content">
+              <h3>Escrita, engenharia e conhecimento</h3>
+              <p>Roda, sistemas de irrigação, escrita, matemática, arquitetura e grandes obras transformaram cidades e sociedades.</p>
+            </div>
+            <div class="era-symbol">⌘</div>
+          </article>
+          <article class="era-row">
+            <div class="era-number">03</div>
+            <div class="era-date">Idade Média</div>
+            <div class="era-content">
+              <h3>Conhecimento em circulação</h3>
+              <p>Novas técnicas agrícolas, instrumentos de navegação, papel, impressão e avanços científicos ajudaram o conhecimento a viajar.</p>
+            </div>
+            <div class="era-symbol">◌</div>
+          </article>
+          <article class="era-row">
+            <div class="era-number">04</div>
+            <div class="era-date">Revolução Industrial</div>
+            <div class="era-content">
+              <h3>Máquinas mudam o mundo</h3>
+              <p>Vapor, fábricas, ferrovias e produção em escala aceleraram o transporte, a comunicação e a transformação das cidades.</p>
+            </div>
+            <div class="era-symbol">⚙</div>
+          </article>
+          <article class="era-row">
+            <div class="era-number">05</div>
+            <div class="era-date">Era Digital</div>
+            <div class="era-content">
+              <h3>Informação em velocidade</h3>
+              <p>Eletrônica, computadores, internet e dispositivos móveis fizeram da informação um dos principais motores da sociedade.</p>
+            </div>
+            <div class="era-symbol">▦</div>
+          </article>
+          <article class="era-row era-highlight">
+            <div class="era-number">06</div>
+            <div class="era-date">Século XXI</div>
+            <div class="era-content">
+              <h3>Inteligência, conexão e automação</h3>
+              <p>Inteligência artificial, robótica, computação em nuvem e biotecnologia ampliam novamente os limites do que podemos criar.</p>
+            </div>
+            <div class="era-symbol">AI</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="evo-marcos">
+        <div class="evo-section-heading compact">
+          <span>02 / MARCOS</span>
+          <h2>Algumas invenções mudaram o caminho</h2>
+        </div>
+        <div class="marco-layout">
+          <div class="marco-feature">
+            <div class="marco-feature-top"><span>UM PONTO DE VIRADA</span><strong>1769</strong></div>
+            <div class="marco-big-icon">⚙</div>
+            <h3>Máquina a vapor</h3>
+            <p>A mecanização da produção e dos transportes abriu caminho para a Revolução Industrial e para uma nova relação entre pessoas, energia e máquinas.</p>
+          </div>
+          <div class="marco-stack">
+            <article><span>~1450</span><h3>Imprensa</h3><p>Mais pessoas passaram a ter acesso a livros e ideias.</p></article>
+            <article><span>1876</span><h3>Telefone</h3><p>A comunicação à distância ganhou uma nova velocidade.</p></article>
+            <article><span>1946</span><h3>Computador eletrônico</h3><p>O processamento automático de informações entrou em uma nova era.</p></article>
+            <article><span>1969+</span><h3>Internet</h3><p>Redes conectaram computadores e, depois, bilhões de pessoas.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="evo-timeline-section">
+        <div class="evo-section-heading timeline-heading">
+          <span>03 / LINHA DO TEMPO</span>
+          <h2>Do fogo aos algoritmos</h2>
+          <p>Cada salto tecnológico aproveitou descobertas anteriores e abriu novas possibilidades.</p>
+        </div>
+
+        <div class="evo-timeline">
+          <div class="evo-time-item left"><span class="time-dot"></span><div><strong>c. 1,7 milhão a.C.</strong><h3>Ferramentas de pedra</h3><p>Objetos moldados intencionalmente ampliam as possibilidades humanas.</p></div></div>
+          <div class="evo-time-item right"><span class="time-dot"></span><div><strong>c. 3.500 a.C.</strong><h3>Escrita</h3><p>Informações passam a ser registradas e transmitidas com maior permanência.</p></div></div>
+          <div class="evo-time-item left"><span class="time-dot"></span><div><strong>c. 3.500 a.C.</strong><h3>Roda</h3><p>Uma ideia simples transforma transporte, produção e engenharia.</p></div></div>
+          <div class="evo-time-item right"><span class="time-dot"></span><div><strong>c. 1450</strong><h3>Imprensa de tipos móveis</h3><p>A reprodução de textos se torna muito mais rápida e amplia a circulação de conhecimento.</p></div></div>
+          <div class="evo-time-item left"><span class="time-dot"></span><div><strong>século XVIII</strong><h3>Revolução Industrial</h3><p>Máquinas e novas fontes de energia mudam a produção e os transportes.</p></div></div>
+          <div class="evo-time-item right"><span class="time-dot"></span><div><strong>século XX</strong><h3>Eletrônica e computação</h3><p>Componentes eletrônicos permitem máquinas cada vez menores, rápidas e complexas.</p></div></div>
+          <div class="evo-time-item left"><span class="time-dot"></span><div><strong>1990+</strong><h3>Web e conectividade</h3><p>A internet populariza o acesso global a informações, serviços e comunicação.</p></div></div>
+          <div class="evo-time-item right final-time"><span class="time-dot"></span><div><strong>Hoje</strong><h3>Inteligência artificial</h3><p>Algoritmos aprendem com dados e passam a participar de tarefas antes realizadas exclusivamente por pessoas.</p></div></div>
+        </div>
+      </section>
+
+      <section class="evo-impact">
+        <div class="impact-quote">
+          <span>04 / E O QUE VEM DEPOIS?</span>
+          <blockquote>“A evolução tecnológica não é apenas sobre máquinas. É sobre o que fazemos com as novas possibilidades.”</blockquote>
+        </div>
+        <div class="future-cards">
+          <article><b>01</b><h3>Conectar</h3><p>Tecnologias aproximam pessoas, cidades, serviços e conhecimentos.</p></article>
+          <article><b>02</b><h3>Automatizar</h3><p>Máquinas assumem tarefas repetitivas e ajudam em decisões complexas.</p></article>
+          <article><b>03</b><h3>Transformar</h3><p>Novas ferramentas mudam trabalho, cultura, educação e a maneira de viver.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+  <div>
+    <ul class="mapa">
+      <h2>Mapa</h2>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="#inicio">Evolução</a></li>
+      <li><a href="#eras">Eras</a></li>
+      <li><a href="#marcos">Marcos</a></li>
+      <li><a href="#linha-do-tempo">Linha do tempo</a></li>
+      <li><a href="#futuro">Futuro</a></li>
+    </ul>
+
+    <ul class="redes">
+      <h2>Redes</h2>
+      <li>
+        <a href="https://www.instagram.com/tech_and_history?stkn=Y3F2dmEzdG81b2Vv">
+          Instagram
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/vicenzoalvesifc-sudo/Com-rcioe-circula-o-de-tecnologia----Civiliza-es">
+          Github
+        </a>
+      </li>
+    </ul>
+
+    <ul class="fontes">
+      <h2>Fontes</h2>
+          <h2>Fontes</h2>
+          <li><a href="https://www.hostgator.com.br/blog/impacto-da-tecnologia-no-comercio-eletronico/">HostGator</a></li>
+          <li><a href="https://e-safer.com.br/evolucao-da-tecnologia-durante-as-decadas/">e-Safer</a></li>
+          <li><a href="https://www.britannica.com/technology/technology">Encyclopaedia Britannica</a></li>
+      
+    </ul>
+  </div>
+
+  <p>
+    <span>© 2026 Tech&History</span>.
+    Desenvolvido por: Gabriel, Andrius, Matheus Mello,
+    Matheus Rafael, Vicenzo e Heitor
+  </p>
+</footer>
+  </body>
+</html>
