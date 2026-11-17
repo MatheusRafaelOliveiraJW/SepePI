@@ -36,9 +36,10 @@ p {
 
 /* banner */
   .banner {
-   padding: 25px;
+   padding: 30px;
    background-color: rgb(8, 13, 24);
    color: whitesmoke;
+   border-bottom: 2px solid rgb(107, 106, 106);
   }
   .banner h1 {
     font-size: 2rem;
@@ -50,29 +51,288 @@ p {
   }
   .banner ul {
     display: flex;
+    justify-content: center;
     gap: 20px;
     padding: 25px 0px 0px 0px;
+  }
+  .banner ul li.azul {
+    background-color: #2f3e88;
+    border-radius: 5px;
+    padding: 7px;
+    color: black;
+  }
+  .banner p span {
+    color: #2f3e88;
+    font-family: "Fjalla one", sans-serif;
+  }
+  .banner ul li.vazio {
+    background-color:  rgb(17, 30, 59);
+    padding: 7px;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+  }
+  .banner ul li p {
+    font-size: 0.7rem;
+  }
+
+  /* Eras */
+  .eras {
+    background-color:  rgb(15, 23, 40);
+    border-bottom: 2px solid gray;
+    padding: 30px;
+  }
+  .eras ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .eras h2 {
+    font-size: 1.8rem;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+  }
+  .eras ul li img {
+   width: 5cm;
+   border-radius: 5px;
+  }
+  .eras ul li {
+    text-align: center;
+  }
+  .eras ul li h3 {
+    color: #2f3e88;
+    padding: 10px;
+  }
+  .eras ul li p {
+    color: whitesmoke;
   }
   
+  /* futuro */
+  .futuro {
+    background-color: rgb(8, 13, 24);
+    padding: 30px;
+  }
+  .futuro p span {
+    color: #2f3e88;
+  }
+
+.futuro {
+  width: 100%;
+  padding: 45px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #f4f7fa;
+  color: #172b46;
+  box-sizing: border-box;
+}
+
+.futuro-subtitulo {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #3975a8;
+  margin-bottom: 22px;
+}
+
+.futuro-frase {
+  max-width: 500px;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 600;
+  margin: 0 auto 35px;
+}
+
+.futuro-lista {
+  width: 100%;
+  max-width: 420px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.futuro-item {
+  width: 100%;
+  padding: 24px 18px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e2eaf1;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(23, 43, 70, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.futuro-numero {
+  display: block;
+  color: #4385b8;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.futuro-item h5 {
+  font-size: 19px;
+  color: #172b46;
+  margin: 0 0 10px;
+}
+
+.futuro-item p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #647386;
+  margin: 0;
+}
+
+
+  
+
 
 /* MEDIA QUERY - DESKTOP */
-@media screen and (min-width: 600px) {
-  /* banner */
-  .banner {
-   padding: 25px;
-   background-color: #010123;
-   color: whitesmoke;
+@media screen and (min-width: 900px) {
+
+  
+/* Banner - Desktop */
+.banner {
+  min-height: 520px;
+  padding: 90px 12%;
+  background-color: #010123;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Identificação do site */
+.banner > p:first-child {
+  white-space: nowrap;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
+
+/* Título */
+.banner h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 18px;
+}
+
+.banner h1 span {
+  color: #2f3e88;
+}
+
+/* Descrição */
+.banner > p:nth-of-type(2) {
+  max-width: 680px;
+  font-size: 0.8rem;
+  line-height: 1.8;
+  text-align: left;
+  text-wrap: pretty;
+}
+
+/* Botões */
+.banner ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 18px;
+  padding-top: 25px;
+}
+
+.banner .azul {
+  background-color: #2f3e88;
+}
+
+.banner .vazio {
+  background-color: #010123;
+  border: 1px solid whitesmoke;
+}
+
+.banner ul li {
+  padding: 10px 18px;
+}
+
+
+  /* Grandes eras */
+  .eras {
+    padding: 70px 10%;
   }
-  .banner h1 {
+
+  .eras h2 {
     font-size: 2rem;
-    padding: 0px 0px 15px;
+    text-align: left;
+    padding: 20px 0 35px;
   }
-  .banner h1 span {
-    color: #000080;
+
+  .eras ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px 25px;
   }
-  .banner ul {
-    display: flex;
-    gap: 20px;
-    padding: 25px 0px 0px 0px;
+
+  .eras ul li {
+    text-align: left;
+  }
+
+  .eras ul li img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+
+  .eras ul li h3 {
+    font-size: 1.2rem;
+    padding: 15px 0 8px;
+  }
+
+  .eras ul li p {
+    font-size: 0.75rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  /* Futuro */
+  .futuro {
+    padding: 80px 10%;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .futuro-subtitulo {
+    font-size: 0.65rem;
+  }
+
+  .futuro-frase {
+    max-width: 750px;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0 0 40px;
+  }
+
+  .futuro-lista {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .futuro-item {
+    padding: 25px;
+    text-align: left;
+  }
+
+  .futuro-item h5 {
+    font-size: 1.1rem;
+  }
+
+  .futuro-item p {
+    font-size: 0.75rem;
+    text-align: left;
   }
 }
