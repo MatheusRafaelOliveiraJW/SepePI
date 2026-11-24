@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech&History — Evolução da Tecnologia</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+    <div class="desktop">
+      <nav>
+        <a href="../index.html"><img src="../Pagina_1/source/logo_cortada.png" alt="" /></a>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
+          <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
+          <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
+          <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
+          <li><a href="../Pagina_5/costumes.html">Curiosidades</a></li>
+          <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
+          <li>
+            <a class="quiz-button" href="../Quiz/index.html">Jogue Quiz!</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mobile">
+      <div class="menuzao">
+        <button class="menu" onclick="toggleMenu()">&#9776;</button>
+        <nav class="sidebar" id="sidebar">
+          <button class="close-btn" onclick="toggleMenu()">&times;</button>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
+            <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
+            <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
+            <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
+            <li><a href="../Pagina_5/costumes.html">Curiosidades</a></li>
+            <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
+            <li><a href="../Quiz/index.html">Jogue Quiz!</a></li>
+          </ul>
+        </nav>
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+        <script>
+          function toggleMenu() {
+            const sidebar = document.getElementById("sidebar");
+            const overlay = document.getElementById("overlay");
+            sidebar.classList.toggle("open");
+            overlay.classList.toggle("open");
+          }
+        </script>
+      </div>
+      <a href="../index.html"><img class="mobile" src="../Pagina_1/source/logo_cortada.png" alt="" /></a>
+    </div>
+  </header>
+
+    <main>
+      <section class="banner">
+        <p><span>TECNOLOGIA • HISTÓRIA • TRANSFORMAÇÃO</span></p>
+      <h1>Evolução da <br><span>tecnologia</span></h1>
+
+      <p>Cada geração adquiriu o conhecimento da geração passada para criar novas ferramentas ou replicar técnicas e aperfeiçoa-las, resolver problemas e transformar a sociedade.</p>
+      <ul>
+        <li class="azul"><p><a href="#futuro">Oque nos espera</a></p></li>
+        <li class="vazio"><p><a href="#eras">Grandes eras</a></p></li>
+      </ul>
+      </section>
+      <section class="eras" id="eras">
+        <h2>GRANDES ERAS</h2>
+        <ul>
+          <li><img src="imagens/arch.jpg" alt="ferramentas"><h3>Pré-história</h3>
+          <p>Pedras, fogo, lanças e técnicas de sobrevivência ampliaram as capacidades humanas e marcaram os primeiros passos da tecnologia.</p></li>
+
+          <li><img src="imagens/waterwheel.jpg" alt="roda"><h3>Antiguidade</h3>
+          <p>Roda, sistemas de irrigação, escrita, matemática, arquitetura e grandes obras transformaram cidades e sociedades.</p></li>
+
+          <li><img src="imagens/astrolabe.jpg" alt="nave"><h3>Idade Média</h3>
+          <p>Novas técnicas agrícolas, instrumentos de navegação, papel, impressão e avanços científicos ajudaram o conhecimento a viajar.</p></li>
+
+          <li><img src="imagens/gutenberg.jpeg" alt="revo"><h3>Revolução Industrial</h3>
+          <p>Vapor, fábricas, ferrovias e produção em escala aceleraram o transporte, a comunicação e a transformação das cidades.</p></li>
+
+          <li><img src="imagens/digitalera.jpg" alt="net"><h3>Era Digital</h3>
+          <p>Eletrônica, computadores, internet e dispositivos móveis fizeram da informação um dos principais motores da sociedade.</p></li>
+
+          <li><img src="imagens/ia.jpg" alt="a"><h3>Século XXI</h3>
+          <p>Inteligência artificial, robótica, computação em nuvem e biotecnologia ampliam novamente os limites do que podemos criar.</p></li>
+        </ul>
+      </section>
+     
+<section class="futuro" id="futuro">
+  <p class="futuro-subtitulo">E • O • QUE • VEM • DEPOIS?</p>
+
+  <h4 class="futuro-frase">
+    “A evolução tecnológica não é apenas sobre máquinas.
+    É sobre o que fazemos com as novas possibilidades.”
+  </h4>
+
+  <ul class="futuro-lista">
+
+    <li class="futuro-item">
+      <span class="futuro-numero">01</span>
+      <h5>Conectar</h5>
+      <p>Tecnologias aproximam pessoas, cidades, serviços e conhecimentos.</p>
+    </li>
+
+    <li class="futuro-item">
+      <span class="futuro-numero">02</span>
+      <h5>Automatizar</h5>
+      <p>Máquinas assumem tarefas repetitivas e ajudam em decisões complexas.</p>
+    </li>
+
+    <li class="futuro-item">
+      <span class="futuro-numero">03</span>
+      <h5>Transformar</h5>
+      <p>Novas ferramentas mudam trabalho, cultura, educação e a maneira de viver.</p>
+    </li>
+
+  </ul>
+</section>
+
+    </main>
+<footer>
+
+    <div class="rodape">
+      <div class="doubles">
+        <ul class="mapa">
+          <li>
+            <h2>Mapa</h2>
+          </li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
+          <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
+          <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
+          <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
+          <li><a href="../Pagina_5/costumes.html">Costumes</a></li>
+          <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
+        </ul>
+        <ul class="redes">
+          <li>
+            <h2>Redes</h2>
+          </li>
+          <li><a href="https://www.instagram.com/tech_and_history?stkn=Y3F2dmEzdG81b2Vv"><img
+                src="../Pagina_6/src/logoInsta.png" alt="">Instagram</a></li>
+          <li><a href="https://github.com/vicenzoalvesifc-sudo/Com-rcioe-circula-o-de-tecnologia----Civiliza-es"><img
+                src="../Pagina_6/src/gitLogo.png" alt="">Github</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="fontes">
+        <li>
+          <h2>Fontes</h2>
+        </li>
+        <li><a href="https://www.hostgator.com.br/blog/impacto-da-tecnologia-no-comercio-eletronico/"><img
+              src="../Pagina_6/src/logoHostgator.png" alt="">HostGator</a></li>
+        <li><a href="https://e-safer.com.br/evolucao-da-tecnologia-durante-as-decadas/"><img
+              src="../Pagina_6/src/eSaferLogo.jpeg" alt="">e-Safer</a></li>
+        <li><a href="https://www.britannica.com/technology/technology"><img src="../Pagina_6/src/encBritLogo.jpeg"
+              alt="">Encyclopaedia Britannica</a></li>
+      </ul>
+    </div>
+    <p>
+      <span>© 2026 Tech&History</span>. Desenvolvido por: Gabriel, Andrius, Matheus Mello,
+      Matheus Rafael, Vicenzo e Heitor. Todos os direitos reservados
+    </p>
+  </footer>
+  </body>
+</html>

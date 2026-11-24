@@ -1,0 +1,628 @@
+/* Fontes */
+/* === IMPORTAÇÃO DE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+/*
+Follow - font-family: "Fredoka", sans-serif;
+Medu - Oswald
+*/
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+html {
+  font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
+  font-family: "Epilogue", sans-serif;
+  scroll-behavior: smooth ;
+}
+
+i {
+  font-family: "Jet Brains", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fjalla One", sans-serif;
+}
+
+p {
+  font-family: "Heebo", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+header {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a img {
+  height: 15vw;
+}
+
+header div.desktop {
+  display: none;
+}
+
+header div.mobile {
+  display: flex;
+  align-items: center;
+  gap: 45vw;
+}
+
+.menu {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 175px;
+  height: 120%;
+  background-image: linear-gradient(to right, #000000, #1f1d3adc);
+  padding-top: 60px;
+  z-index: 10;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  font-size: 15px;
+  border-right: solid 2px #2f3e88;
+  border-radius: 10px;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+  backdrop-filter: blur(10px);
+}
+
+.sidebar ul li a {
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+  background-color: #222;
+}
+
+.sidebar .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.overlay.open {
+  display: block;
+}
+
+
+/* banner */
+.banner {
+  padding: 30px;
+  background-color: rgb(8, 13, 24);
+  color: whitesmoke;
+  border-bottom: 2px solid rgb(107, 106, 106);
+}
+
+.banner {
+    background-image: url("../imagens/fundomemo.jpg");
+    background-size: cover;
+    background-position: center;
+    .banner {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("imagens/fundo.jpg");
+
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+}
+
+.banner h1 {
+  font-size: 2rem;
+  padding: 0px 0px 15px;
+  text-align: center;
+}
+
+.banner p {
+  font-weight: bold;
+}
+
+.banner h1 span {
+  color: #f0ede5;
+}
+
+.banner ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 25px 0px 0px 0px;
+}
+
+.banner ul li.azul {
+  background-color: #2f3e88;
+  border-radius: 5px;
+  padding: 7px;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.banner ul li.azul:hover {
+  transform: scale(1.1);
+}
+
+.banner ul li.azul:active {
+    transform: scale(0.95);
+}
+
+.banner ul li.vazio:hover {
+  transform: scale(1.1);
+}
+
+.banner ul li.vazio:active {
+    transform: scale(0.95);
+}
+
+.banner p span {
+  color: #3975a8;
+  font-family: "Fjalla one", sans-serif;
+}
+
+.banner ul li.vazio {
+  padding: 7px;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+}
+
+.banner ul li p {
+  font-size: 0.7rem;
+}
+
+/* Eras */
+.eras {
+  background-color: rgb(15, 23, 40);
+  border-bottom: 2px solid gray;
+  padding: 30px;
+}
+
+.eras ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.eras h2 {
+  font-size: 1.8rem;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+}
+
+.eras ul li img {
+  width: 5cm;
+  border-radius: 5px;
+}
+
+.eras ul li {
+  text-align: center;
+}
+
+.eras ul li h3 {
+  color: #3975a8;
+  padding: 10px;
+}
+
+.eras ul li p {
+  color: whitesmoke;
+}
+
+/* futuro */
+.futuro {
+  background-color: rgb(8, 13, 24);
+  padding: 30px;
+}
+
+.futuro p span {
+  color: #3975a8;
+}
+
+.futuro {
+  width: 100%;
+  padding: 45px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #f4f7fa;
+  color: #172b46;
+  box-sizing: border-box;
+}
+
+.futuro-subtitulo {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #3975a8;
+  margin-bottom: 22px;
+}
+
+.futuro-frase {
+  max-width: 500px;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 600;
+  margin: 0 auto 35px;
+}
+
+.futuro-lista {
+  width: 100%;
+  max-width: 420px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.futuro-item {
+  width: 100%;
+  padding: 24px 18px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e2eaf1;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(23, 43, 70, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.futuro-numero {
+  display: block;
+  color: #4385b8;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.futuro-item h5 {
+  font-size: 19px;
+  color: #172b46;
+  margin: 0 0 10px;
+}
+
+.futuro-item p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #647386;
+  margin: 0;
+}
+footer {
+  padding: 0 6vw 3vw 6vw;
+  border-top: solid 2px rgb(3, 102, 69);
+}
+
+footer div.doubles {
+  display: flex;
+  gap: 12vw;
+  padding-bottom: 30px;
+}
+
+footer div ul li {
+  margin-top: 20px;
+  align-items: center;
+}
+
+footer div ul.fontes li {
+  display: flex;
+  align-items: center;
+}
+
+footer div ul.redes li {
+  display: flex;
+  flex-direction: row;
+}
+
+footer div ul li img {
+  width: auto;
+  height: 25px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+
+footer div ul li a {
+  padding: 2px;
+}
+
+footer a:hover {
+  color: #000080;
+  border-bottom: #000080;
+}
+
+
+footer h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 20px 0 10px 0;
+
+}
+
+
+footer a:hover {
+  border-bottom: 2px solid white;
+  color: #f0ede5;
+}
+
+footer p {
+  padding: 20px 0;
+  font-size: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/*--------------ate aqui-------*/
+
+
+
+
+
+/* MEDIA QUERY - DESKTOP */
+@media screen and (min-width: 900px) {
+
+
+  header div.mobile {
+    display: none;
+  }
+
+  header div.desktop {
+    display: block;
+  }
+
+
+  header {
+    display: flex;
+    background-color: #000000af;
+    font-size: 0.4rem;
+    padding: 0.5vw;
+    position: fixed;
+    top: 0vw;
+    z-index: 10;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  header a img {
+    height: 5vw;
+    padding: 0vw 2vw;
+  }
+  header li a {
+    font-weight: bold;
+  }
+  header li a:hover {
+    color: #3975a8;
+    border-bottom: #3975a8 2px solid;
+    font-weight: bold;
+  
+  }
+
+
+  header a.quiz-button {
+    background-color: #1f1d3a;
+    padding: 1.2vw;
+    border-radius: 2vw;
+  }
+
+  header a.quiz-button:hover {
+    background: none;
+    border: solid 1px white;
+    transition: ease 1s;
+  }
+
+  header div.desktop nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .desktop ul {
+    display: flex;
+    gap: 2vw;
+    position: fixed;
+    right: 3vw;
+  }
+
+  div.mobile {
+    display: none;
+  }
+
+
+  /* Banner - Desktop */
+  .banner {
+    min-height: 520px;
+    padding: 90px 12%;
+    background-color: #010123;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  /* Identificação do site */
+  .banner>p:first-child {
+    white-space: nowrap;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+  }
+
+  /* Título */
+  .banner h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    text-align: left;
+    padding-bottom: 18px;
+  }
+
+  .banner h1 span {
+    color: #3975a8;
+  }
+
+  /* Descrição */
+  .banner>p:nth-of-type(2) {
+    max-width: 680px;
+    font-size: 0.8rem;
+    line-height: 1.8;
+    text-align: left;
+    text-wrap: pretty;
+  }
+
+  /* Botões */
+  .banner ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 18px;
+    padding-top: 25px;
+  }
+
+  .banner .azul {
+    background-color: #2f3e88;
+    color: white;
+  }
+
+  .banner .vazio {
+    border: 1px solid whitesmoke;
+  }
+
+  .banner ul li {
+    padding: 10px 18px;
+  }
+
+
+  /* Grandes eras */
+  .eras {
+    padding: 70px 10%;
+  }
+
+  .eras h2 {
+    font-size: 2rem;
+    text-align: left;
+    padding: 20px 0 35px;
+  }
+
+  .eras ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px 25px;
+  }
+
+  .eras ul li {
+    text-align: left;
+  }
+
+  .eras ul li img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+
+  .eras ul li h3 {
+    font-size: 1.2rem;
+    padding: 15px 0 8px;
+  }
+
+  .eras ul li p {
+    font-size: 0.75rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  /* Futuro */
+  .futuro {
+    padding: 80px 10%;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .futuro-subtitulo {
+    font-size: 0.65rem;
+  }
+
+  .futuro-frase {
+    max-width: 750px;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0 0 40px;
+  }
+
+  .futuro-lista {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .futuro-item {
+    padding: 25px;
+    text-align: left;
+  }
+
+  .futuro-item h5 {
+    font-size: 1.1rem;
+  }
+
+  .futuro-item p {
+    font-size: 0.75rem;
+    text-align: left;
+  }
+    div.rodape {
+    margin: 3vw 1.4vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  div.rodape a {
+    font-size: 0.6rem;
+  }
+  footer p {
+    margin: 3vw 1.4vw;
+    font-size: 0.4rem;
+    text-align: center;
+    padding: 50px;
+  }
+
+}
